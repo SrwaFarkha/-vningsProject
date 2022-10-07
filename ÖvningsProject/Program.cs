@@ -28,7 +28,14 @@ if (answear == "yes")
     string _legs = Console.ReadLine();
     string _size = Console.ReadLine();
     Console.WriteLine();
-    Console.WriteLine($"Your animal is: Name: {_name}, Age: {_age}, Number os legs: {_legs} and size: {_size}");
+    
+    Console.WriteLine("The new list is:");
+
+    foreach (var result in animals)
+    {
+        Console.WriteLine($" Name: {result.Name}, Age: {result.Age}, Number  of legs: {result.Legs}, Size: {result.Size}");
+    }
+    Console.WriteLine($" Name: {_name}, Age: {_age}, Number of legs: {_legs}, size: {_size}");
 }
 else
 {
